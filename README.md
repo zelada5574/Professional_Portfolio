@@ -13,3 +13,9 @@ The header section has my name, and links to jump to id sections of the page of 
 Some noteable customization happened wwith the "My Work" images and their project titles. images were enhanced so that the first project image would be larger than the rest, while the other 4 were broken into sets of two on seperate articles. Then each image was given it's own figure so a <p> element could be given an absolute refrence to the <figure> element's relative position. Images were given a hover feature to dark photos, and each image in the work section links to a project page. Images also have a border and box shadow styling.
 
 Footer has contact information and socials for future employers to look at
+
+![alt text](/Assets/images/Screenshot1.PNG)
+![alt text](/Assets/images/Screenshot2.PNG)
+![alt text](/Assets/images/Screenshot3.PNG)
+
+https://zelada5574.github.io/Professional_Portfolio/
