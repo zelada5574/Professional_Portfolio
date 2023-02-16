@@ -1,0 +1,219 @@
+/* Gives entire page color */
+body {
+    background-color: rgba(231, 223, 223, 0.753);
+}
+
+/* Gives my name a different size and display than rest of head */
+#me {
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Styling elements for top header banner */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #334042;
+    
+}
+
+/* styling elements for the the link bar on page */
+header nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+
+/* gives <a> tags a black color than default blue/purple */
+header nav a {
+    color: black;
+}
+
+/* lines up li items */
+li {
+
+    display: inline-block;
+    margin: 0 5px;
+
+}
+
+/* style for all h2 titles on the page */
+h2  {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: #334042; 
+    margin-left: 15px;
+    margin-top: 50px;
+
+}
+
+/* font/appearance of all <p> on page */
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 40px;
+    
+}
+
+/* display options for the suit class box to keep centered */
+.suit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+/* suit photo styling */
+.suit img {
+
+    max-height: auto;
+    width: 25%;
+    margin-left: 15px;
+    
+}
+
+/* margins and display options for the "My work" photos */
+main article {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* style options for first project image to be larger than the rest, alone, and centered  with border/box shadow*/
+.first a img {
+    max-height: 400px;
+    width: 800px;
+    border: 5px solid;
+    border-color: rgb(137, 204, 221); 
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* hover option image to make it darker */
+.first a img:hover {
+
+    -webkit-filter: brightness(85%);
+}
+
+/* essentially created for text for first figure p to be able to be absolutly positioned */
+.first figure {
+
+    position: relative;
+}
+
+/* created so the text in <p> for figure definition will always be on photos */
+.first figure p {
+
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    background: local;
+    background-color: rgb(137, 204, 221);
+}
+
+/* styling for images in project articles */
+.projects a img {
+
+    height: 250px;
+    width: 390px;
+    border:  5px solid;
+    border-color: rgb(137, 204, 221);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+/* hover option image to make it darker */
+.projects a img:hover {
+
+    -webkit-filter: brightness(85%);
+}
+
+/* spacing and location for a tag items */
+.projects a {
+    display: inline-block;
+    height: auto;
+    width: 390px;
+    margin: 10px 10px;
+
+}
+
+/* essentially created for text for projects figure p to be able to be absolutly positioned */
+.projects figure {
+
+    position: relative;
+}
+
+/* created so the text in <p> for project definition will always be on photos */
+.projects figure p {
+
+    position: absolute;
+    left: 0px;
+    bottom: 5px;
+    background: local;
+    background-color: rgb(137, 204, 221);
+}
+
+/* foot banner styling options */
+.footer {
+        padding: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #334042;
+        color: black;
+        list-style-type: none;
+    }
+
+
+/* "Contact Me styling */
+    .footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    color: black;
+  
+}
+
+/* li styling in footer class section so theys tack */
+.footer li {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+
+}
+
+/* so <a> element text is black */
+.footer nav ul li a {
+    color: black;
+}
+
+/* adjustment of page using a media screen so when page drops below 768, inside elements adjust */
+@media screen and (max-width: 768) {
+    header, main {
+        flex-direction: column;
+    }
+    
+    section {
+        padding-right: 0;
+      }
+    
+      article {
+        width: 100%;
+        margin: 0;
+      }
+    
+}
